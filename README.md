@@ -14,9 +14,11 @@
 1. ```Установка  Vagrant - wget https://hashicorp-releases.yandexcloud.net/vagrant/2.4.9/vagrant_2.4.9-1_amd64.deb &&&
 sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 
-2. ``Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack
+2. `Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack
 Результат ниже
-``
+`
+![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
+
 
 3. ```
 ```
@@ -30,7 +32,6 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 ```
 
 
-![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
 
 
 ---
