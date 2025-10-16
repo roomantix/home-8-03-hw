@@ -18,19 +18,35 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb
 
 3. 
 
-
 ```
 Поле для вставки кода...
-....
-....
-....
-....
+Установка Docker , GitLab, gitlab-runner
+
+apt-get install -y docker.io docker-compose
+
+apt-get install -y curl openssh-server ca-certificates tzdata perl
+
+curl -L "https://packages.gitlab.com/gitlab/gitlab-ee/gpgkey" | sudo apt-key add -
+
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+
+sudo EXTERNAL_URL="http://gitlab.localdomain" apt-get install gitlab-ee
+docker pull gitlab/gitlab-runner:latest
+docker pull sonarsource/sonar-scanner-cli:latest
+docker pull golang:1.17
+docker pull docker:latest
+
+локальный домен
+ip a
+echo '192.168.1.9    gitlab.localdomain gitlab' >> /etc/hosts
+
 ```
 
+```
 Скриншот-1 к Установить Gitlab с помощью Vagrant:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
 
-
+```
 ---
 
 ### Задание 2
