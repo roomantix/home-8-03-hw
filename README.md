@@ -11,12 +11,13 @@
 3. Зарегистрируйте gitlab-runner для этого проекта и запустите его в режиме Docker. Раннер можно регистрировать и запускать на той же виртуальной машине, на которой запущен GitLab.
 4. В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.```
 
-1. `Установка  Vagrant wget https://hashicorp-releases.yandexcloud.net/vagrant/2.4.9/vagrant_2.4.9-1_amd64.deb
-sudo dpkg -i vagrant_2.3.5-1_amd64.deb`
+1. ```Установка  Vagrant - wget https://hashicorp-releases.yandexcloud.net/vagrant/2.4.9/vagrant_2.4.9-1_amd64.deb
+sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 
-2. `Далее установил ВиртуалБокс т.к. я начал делать это вс на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack`
+2. ```Далее установил ВиртуалБокс т.к. я начал делать это вс на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack```
 
-3. ``
+3. ```
+```
 
 ```
 Поле для вставки кода...
