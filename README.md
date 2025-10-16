@@ -17,7 +17,7 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 2. `Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack
 Результат ниже
 `
-![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
+
 
 
 3. ```
@@ -31,7 +31,8 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 ....
 ```
 
-
+Скриншот-1 к Установить Gitlab с помощью Vagrant:
+![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
 
 
 ---
