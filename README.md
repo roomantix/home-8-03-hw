@@ -30,7 +30,7 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb```
 ```
 
 
-![Установка машины с помощью Vargant](<img src = "img/1.png" width = 100%>)
+![Установка машины с помощью Vargant](<img src = "https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png" width = 100%>)
 
 
 ---
