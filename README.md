@@ -71,8 +71,8 @@ docker run -ti --rm --name gitlab-runner \
      --network host \
      -v /srv/gitlab-runner/config:/etc/gitlab-runner \
      -v /var/run/docker.sock:/var/run/docker.sock \
-     gitlab/gitlab-runner:latest register
-```
+     gitlab/gitlab-runner:latest register```
+
 
 
 Скриншот-1 к Установить Gitlab с помощью Vagrant:
