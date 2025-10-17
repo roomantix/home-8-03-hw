@@ -19,9 +19,10 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb
 
 2. Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack , после установки произошла ошибка , скриншот 1
 
-3. Далее я установил все на той же машине , код ниже.```
+3. Далее я установил все на той же машине , код ниже.
 
-```Поле для вставки кода...
+```
+Поле для вставки кода...
 Установка Docker , GitLab, gitlab-runner
 
 apt-get install -y docker.io docker-compose
@@ -71,7 +72,7 @@ docker run -ti --rm --name gitlab-runner \
      --network host \
      -v /srv/gitlab-runner/config:/etc/gitlab-runner \
      -v /var/run/docker.sock:/var/run/docker.sock \
-     gitlab/gitlab-runner:latest register```
+     gitlab/gitlab-runner:latest register
 
 
 
