@@ -24,13 +24,32 @@ sudo dpkg -i vagrant_2.3.5-1_amd64.deb
 
 apt-get install -y docker.io docker-compose
 
-apt-get install -y curl openssh-server ca-certificates tzdata perl
-
-curl -L "https://packages.gitlab.com/gitlab/gitlab-ee/gpgkey" | sudo apt-key add -
+apt-get install -y curl openssh-server ca-certificates tzdata perl postfix
 
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 
+Локальный домен
+ip a
+echo '192.168.1.9    gitlab.localdomain gitlab' >> /etc/hosts
+
 sudo EXTERNAL_URL="http://gitlab.localdomain" apt-get install gitlab-ee
+
+установка Докер
+1
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+2
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+3
+sudo apt update
+sudo apt install docker-ce
+
+Install GitLab Runner
+
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+
+sudo apt install gitlab-runner
+
 docker pull gitlab/gitlab-runner:latest
 docker pull sonarsource/sonar-scanner-cli:latest
 docker pull golang:1.17
@@ -39,6 +58,9 @@ docker pull docker:latest
 локальный домен
 ip a
 echo '192.168.1.9    gitlab.localdomain gitlab' >> /etc/hosts
+
+cvjnhbv gfhjkm
+cat /etc/gitlab/initial_root_password
 
 ```
 
