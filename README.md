@@ -11,15 +11,17 @@
 3. Зарегистрируйте gitlab-runner для этого проекта и запустите его в режиме Docker. Раннер можно регистрировать и запускать на той же виртуальной машине, на которой запущен GitLab.
 4. В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.```
 
+
+```
+Ответ
 1. Установка  Vagrant - wget https://hashicorp-releases.yandexcloud.net/vagrant/2.4.9/vagrant_2.4.9-1_amd64.deb &&&
 sudo dpkg -i vagrant_2.3.5-1_amd64.deb
 
 2. Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack , после установки произошла ошибка , скриншот 1
 
-3. 
+3. Далее я установил все на той же машине , код ниже.```
 
-```
-Поле для вставки кода...
+```Поле для вставки кода...
 Установка Docker , GitLab, gitlab-runner
 
 apt-get install -y docker.io docker-compose
@@ -70,7 +72,6 @@ docker run -ti --rm --name gitlab-runner \
      -v /srv/gitlab-runner/config:/etc/gitlab-runner \
      -v /var/run/docker.sock:/var/run/docker.sock \
      gitlab/gitlab-runner:latest register
-
 ```
 
 
