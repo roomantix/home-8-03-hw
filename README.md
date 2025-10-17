@@ -75,13 +75,13 @@ docker run -ti --rm --name gitlab-runner \
      gitlab/gitlab-runner:latest register
 
 
-'
+
 Скриншот-1 к Установить Gitlab с помощью Vagrant:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
 
 Скриншот-2 к Зарегестрировать Раннер:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/2.png)
-'
+---
 
 ### Задание 2
 
