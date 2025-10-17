@@ -14,7 +14,7 @@
 1. Установка  Vagrant - wget https://hashicorp-releases.yandexcloud.net/vagrant/2.4.9/vagrant_2.4.9-1_amd64.deb &&&
 sudo dpkg -i vagrant_2.3.5-1_amd64.deb
 
-2. Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack , после установки произошла ошибка , скриншот ниже
+2. Далее установил ВиртуалБокс т.к. я начал делать это все на виртуальной машине  и я даже не знал о том что нужно было делать на домашнем пк - sudo apt update && sudo apt install virtualbox virtualbox-ext-pack , после установки произошла ошибка , скриншот 1
 
 3. 
 
@@ -34,41 +34,53 @@ echo '192.168.1.9    gitlab.localdomain gitlab' >> /etc/hosts
 
 sudo EXTERNAL_URL="http://gitlab.localdomain" apt-get install gitlab-ee
 
-установка Докер
-1
+Установка Докер
+1.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-2
+2.
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-3
+3.
 sudo apt update
 sudo apt install docker-ce
 
-Install GitLab Runner
-
+Установка гитлаб раннер
+1.
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
-
+2.
 sudo apt install gitlab-runner
+3.
+Скачиваем образы заранее
 
 docker pull gitlab/gitlab-runner:latest
 docker pull sonarsource/sonar-scanner-cli:latest
 docker pull golang:1.17
 docker pull docker:latest
 
-локальный домен
-ip a
-echo '192.168.1.9    gitlab.localdomain gitlab' >> /etc/hosts
-
-cvjnhbv gfhjkm
+4.
+Узнаем пароль
 cat /etc/gitlab/initial_root_password
+и заходим в наш новый проект, там в CI/CD находим раннер и нажимаем регистрация
+
+5.
+Регистрация
+
+docker run -ti --rm --name gitlab-runner \
+     --network host \
+     -v /srv/gitlab-runner/config:/etc/gitlab-runner \
+     -v /var/run/docker.sock:/var/run/docker.sock \
+     gitlab/gitlab-runner:latest register
 
 ```
 
-```
+
 Скриншот-1 к Установить Gitlab с помощью Vagrant:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/1.png)
 
-```
+Скриншот-2 к Зарегестрировать Раннер:
+![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/2.png)
+
+
 ---
 
 ### Задание 2
