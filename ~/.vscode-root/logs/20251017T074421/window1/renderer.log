@@ -1,0 +1,7 @@
+2025-10-17 07:44:23.551 [warning] Creation of workbench contribution 'workbench.contrib.configurationDefaultOverridesContribution' took 21ms.
+2025-10-17 07:44:24.939 [info] Started local extension host with pid 5154.
+2025-10-17 07:44:31.250 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-17 07:44:32.130 [error] [Extension Host] (node:5154) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-10-17 07:44:33.714 [info] [perf] Render performance baseline is 263ms
+2025-10-17 08:30:19.057 [error] [text file model] handleSaveError(244) - exit - resulted in a save error: Error: Unable to write file '/vargant/home-8-03-hw/README.md' (Error: File Modified Since) file:///vargant/home-8-03-hw/README.md

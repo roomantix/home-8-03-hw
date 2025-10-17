@@ -1,0 +1,67 @@
+2025-10-16 23:18:26.930 [info] [main] Log level: Info
+2025-10-16 23:18:26.930 [info] [main] Validating found git in: "git"
+2025-10-16 23:18:26.930 [info] [main] Using git "2.34.1" from "git"
+2025-10-16 23:18:26.930 [info] [Model][doInitialScan] Initial repository scan started
+2025-10-16 23:18:26.930 [info] > git rev-parse --show-toplevel [31ms]
+2025-10-16 23:18:26.934 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [7ms]
+2025-10-16 23:18:27.012 [info] [Model][openRepository] Opened repository (path): /vargant/home-8-03-hw
+2025-10-16 23:18:27.012 [info] [Model][openRepository] Opened repository (real path): /vargant/home-8-03-hw
+2025-10-16 23:18:27.012 [info] [Model][openRepository] Opened repository (kind): repository
+2025-10-16 23:18:27.058 [info] > git rev-parse --show-toplevel [25ms]
+2025-10-16 23:18:27.060 [info] > git config --get commit.template [32ms]
+2025-10-16 23:18:27.088 [info] > git rev-parse --show-toplevel [15ms]
+2025-10-16 23:18:27.097 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-10-16 23:18:27.108 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2025-10-16 23:18:27.141 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/vargant/home-8-03-hw/.git/refs/remotes/origin/main'
+2025-10-16 23:18:27.153 [info] > git rev-parse refs/remotes/origin/main [12ms]
+2025-10-16 23:18:27.183 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-10-16 23:18:27.236 [info] > git status -z -uall [69ms]
+2025-10-16 23:18:27.510 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [131ms]
+2025-10-16 23:18:27.539 [info] > git config --get --local branch.main.vscode-merge-base [19ms]
+2025-10-16 23:18:27.539 [warning] [Git][config] git config failed: Failed to execute git
+2025-10-16 23:18:27.547 [info] > git config --get commit.template [39ms]
+2025-10-16 23:18:27.563 [info] > git check-ignore -v -z --stdin [7ms]
+2025-10-16 23:18:27.565 [info] > git reflog main --grep-reflog=branch: Created from *. [18ms]
+2025-10-16 23:18:27.621 [info] > git show --textconv :README.md [30ms]
+2025-10-16 23:18:27.623 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [44ms]
+2025-10-16 23:18:27.624 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [53ms]
+2025-10-16 23:18:27.640 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/vargant/home-8-03-hw/.git/refs/remotes/origin/main'
+2025-10-16 23:18:27.641 [info] > git ls-files --stage -- README.md [37ms]
+2025-10-16 23:18:27.650 [info] > git rev-parse refs/remotes/origin/main [10ms]
+2025-10-16 23:18:27.669 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [38ms]
+2025-10-16 23:18:27.726 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [48ms]
+2025-10-16 23:18:27.738 [info] > git cat-file -s 64ef33813a891d5721fd0c43bb2d92c8c0522589 [89ms]
+2025-10-16 23:18:27.741 [info] > git status -z -uall [83ms]
+2025-10-16 23:18:27.803 [info] > git config --add --local branch.main.vscode-merge-base origin/main [98ms]
+2025-10-16 23:18:27.844 [info] > git config --get commit.template [28ms]
+2025-10-16 23:18:27.852 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [8ms]
+2025-10-16 23:18:27.974 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/vargant/home-8-03-hw/.git/refs/remotes/origin/main'
+2025-10-16 23:18:27.979 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-10-16 23:18:27.999 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-10-16 23:18:28.056 [info] > git blame --root --incremental 7e21e2d40ba50c52663f9a8b4d32d273e2adaea5 -- README.md [44ms]
+2025-10-16 23:18:28.108 [info] > git status -z -uall [121ms]
+2025-10-16 23:18:28.147 [info] > git merge-base refs/heads/main refs/remotes/origin/main [17ms]
+2025-10-16 23:18:28.172 [info] > git diff --name-status -z --diff-filter=ADMR 7e21e2d40ba50c52663f9a8b4d32d273e2adaea5...refs/remotes/origin/main [6ms]
+2025-10-16 23:18:28.175 [info] > git merge-base refs/heads/main refs/remotes/origin/main [34ms]
+2025-10-16 23:18:28.229 [info] > git diff --name-status -z --diff-filter=ADMR 7e21e2d40ba50c52663f9a8b4d32d273e2adaea5...refs/remotes/origin/main [21ms]
+2025-10-16 23:18:29.252 [info] > git ls-files --stage -- README.md [16ms]
+2025-10-16 23:18:29.284 [info] > git cat-file -s 64ef33813a891d5721fd0c43bb2d92c8c0522589 [11ms]
+2025-10-16 23:18:29.344 [info] > git show --textconv :README.md [13ms]
+2025-10-16 23:18:29.438 [info] > git config --get commit.template [5ms]
+2025-10-16 23:18:29.484 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [19ms]
+2025-10-16 23:18:29.496 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/vargant/home-8-03-hw/.git/refs/remotes/origin/main'
+2025-10-16 23:18:29.512 [info] > git rev-parse refs/remotes/origin/main [16ms]
+2025-10-16 23:18:29.561 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-10-16 23:18:29.630 [info] > git status -z -uall [105ms]
+2025-10-16 23:18:31.175 [info] > git show --textconv :md-instruction.md [18ms]
+2025-10-16 23:18:31.186 [info] > git ls-files --stage -- md-instruction.md [14ms]
+2025-10-16 23:18:31.242 [info] > git cat-file -s 32add5b66304719dfa826438aa31aba45bfa065a [22ms]
+2025-10-16 23:18:31.972 [info] > git show --textconv :README.md [29ms]
+2025-10-16 23:18:31.998 [info] > git ls-files --stage -- README.md [28ms]
+2025-10-16 23:18:32.012 [info] > git cat-file -s 64ef33813a891d5721fd0c43bb2d92c8c0522589 [4ms]
+2025-10-16 23:18:34.714 [info] > git config --get commit.template [9ms]
+2025-10-16 23:18:34.722 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2025-10-16 23:18:34.740 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/vargant/home-8-03-hw/.git/refs/remotes/origin/main'
+2025-10-16 23:18:34.745 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2025-10-16 23:18:34.790 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-10-16 23:18:34.834 [info] > git status -z -uall [75ms]

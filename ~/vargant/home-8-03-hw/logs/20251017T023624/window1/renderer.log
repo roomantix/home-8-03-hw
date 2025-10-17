@@ -1,0 +1,9 @@
+2025-10-17 02:36:28.515 [warning] Creation of workbench contribution 'workbench.contrib.scmMultiDiffSourceResolver' took 27ms.
+2025-10-17 02:36:28.740 [warning] Creation of workbench contribution 'workbench.contrib.configurationDefaultOverridesContribution' took 51ms.
+2025-10-17 02:36:31.680 [info] Started local extension host with pid 4072.
+2025-10-17 02:36:41.145 [error] [Extension Host] (node:4072) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-10-17 02:36:51.509 [warning] Creation of workbench contribution 'terminal.chatAgentTools' took 139ms.
+2025-10-17 02:36:51.921 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-17 02:36:56.152 [info] [perf] Render performance baseline is 984ms
+2025-10-17 07:05:03.815 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.closeStorage, join.chatSessionStore, join.chatEditingSession
