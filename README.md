@@ -161,7 +161,7 @@ sudo gitlab-runner start
 После этого ошибка не исчезла , почему не понятно.
 посмотрев 
 cat /etc/hosts
-там вс вопрядке с айпи адресом.
+там все вопрядке с айпи адресом.
 
 Я решил прописать явно руннеру что за хостом и дописал вот так
 
@@ -224,3 +224,10 @@ build:
 
 Скриншот-5 к заданию 2 пункт 2, gitlab-ci:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/5.png)
+
+
+Скриншот-5 к заданию 2 пункт 2, успешный запуск gitlab-ci:
+![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/6.png)
+
+Скриншот-5 к заданию 2 пункт 2, ошибка до насписания extra_hosts в настройках рунне-а:
+![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/7.png)
