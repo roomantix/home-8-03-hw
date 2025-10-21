@@ -226,8 +226,8 @@ build:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/5.png)
 
 
-Скриншот-5 к заданию 2 пункт 2, успешный запуск gitlab-ci:
+Скриншот-6 к заданию 2 пункт 2, успешный запуск gitlab-ci:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/6.png)
 
-Скриншот-5 к заданию 2 пункт 2, ошибка до насписания extra_hosts в настройках рунне-а:
+Скриншот-7 к заданию 2 пункт 2, ошибка до насписания extra_hosts в настройках рунне-а:
 ![Установка машины с помощью Vargant](https://github.com/roomantix/home-8-03-hw/blob/main/img/7.png)
