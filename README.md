@@ -120,6 +120,55 @@ git push origin main
 Задание 2
 Пункт 2
 К сожалению я не смог запустить сборку , приложу скриншоты ошибок, так и не смог понять в чем причина данной ошибки, приложил скриншоты после расшифровки файла.
+
+После того как дали ответ по исправлению я начал искать ошибки.
+Решение проблем:
+
+Первое что у меня было не правильно , первое что сделал удалил сам руннер 
+docker rm gitlab-runner - дело именно в нем.
+Затем попытался его заного зарегестрировать и наткнулся на вот такую ошибку.
+
+PANIC: decoding configuration file: toml: line 9 (last key "runners.name"): invalid UTF-8 byte: 0xd1 
+Я посмотрел кодировку
+file -i /etc/gitlab-runner/config.toml
+
+Решил прост удалить сам файл , перед этим я его скопировал на всякий случай.
+После этого я его заного зарегистрировал и запустил.
+docker run -d --name gitlab-runner --restart always \
+     --network host \
+     -v /srv/gitlab-runner/config:/etc/gitlab-runner \
+     -v /var/run/docker.sock:/var/run/docker.sock \
+     gitlab/gitlab-runner:latest
+
+Запуск
+
+docker run -d --name gitlab-runner --restart always \
+     --network host \
+     -v /srv/gitlab-runner/config:/etc/gitlab-runner \
+     -v /var/run/docker.sock:/var/run/docker.sock \
+     gitlab/gitlab-runner:latest
+
+
+После этого, у меня не уходила ошибка в самом гитлабе.
+Я посмотрел статус руннера
+sudo gitlab-runner status
+
+Runtime platform                                    arch=amd64 os=linux pid=706743 revision=139a0ac0 version=18.4.0
+gitlab-runner: Service has stopped
+
+Оказалось что он отключен , я его включил
+sudo gitlab-runner start
+После этого ошибка не исчезла , почему не понятно.
+посмотрев 
+cat /etc/hosts
+там вс вопрядке с айпи адресом.
+
+Я решил прописать явно руннеру что за хостом и дописал вот так
+
+   extra_hosts = ["gitlab.localdomain:192.168.1.9"]
+
+После этого всё заработало, скриншот успешного запуска прилагаю ( Скриншоты 6 - 7)
+
 Описание .gitlab-ci.yml приложил в поле ниже
 ```
 
